@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medges Ej – små appar för vardagens strul i Stockholm</title>
+<meta name="description" content="Vardagen säger nej. Våra appar säger ja. Medges Ej är en liten appstudio i Stockholm som gör lugna appar för vardagens små strul. En sak per app, inget konto, ingen reklam.">
+<link rel="canonical" href="https://medgesej.se/">
+<meta name="theme-color" content="#eceeed" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121514" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Medges Ej">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:url" content="https://medgesej.se/">
+<meta property="og:title" content="Vardagen säger nej. Våra appar säger ja.">
+<meta property="og:description" content="Lugna appar för vardagens små strul i Stockholm. En sak per app, inget konto, ingen reklam.">
+<meta property="og:image" content="https://medgesej.se/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="En kortterminal som visar Medges ej, bredvid rubriken Vardagen säger nej. Våra appar säger ja.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preload" href="/fonts/familjen-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<script src="/main.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="logo" href="#top" aria-label="Medges Ej, till toppen">
+      <span class="logo-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#d92f3c" stroke-width="3.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+      Medges Ej
+    </a>
+    <nav class="nav" aria-label="Huvudmeny">
+      <a href="#appar">Appar</a>
+      <a href="#om">Om</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div>
+        <p class="eyebrow">Små appar från Stockholm</p>
+        <h1>Vardagen säger <em>nej.</em> Våra appar säger ja.</h1>
+        <p class="lede">Medges Ej gör lugna appar för vardagens små strul. <strong>En sak per app.</strong> Inget konto, ingen reklam.</p>
+      </div>
+      <div class="term-col">
+        <button class="terminal" id="terminal" type="button" aria-label="Blippa kortet">
+          <div class="screen" aria-live="polite">
+            <div class="state" id="idle">
+              <span class="amount-label">ATT BETALA</span>
+              <span class="amount" id="amount">287,50 kr</span>
+              <svg class="nfc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+                <path d="M7 8.5a5 5 0 0 1 0 7"/><path d="M10.5 6a8.5 8.5 0 0 1 0 12"/><path d="M14 3.5a12 12 0 0 1 0 17"/>
+              </svg>
+              <span class="prompt">Blippa eller sätt i kort</span>
+            </div>
+            <div class="state" id="busy" hidden>
+              <div class="spinner" aria-hidden="true"></div>
+              <span class="prompt">Behandlar…</span>
+            </div>
+            <div class="state" id="denied" hidden>
+              <div class="x" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#e0313f" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+              </div>
+              <span class="denied-title">Medges ej</span>
+              <span class="denied-sub">Kontakta din kortutgivare</span>
+            </div>
+          </div>
+          <div class="keys" aria-hidden="true">
+            <span class="key">1</span><span class="key">2</span><span class="key">3</span>
+            <span class="key">4</span><span class="key">5</span><span class="key">6</span>
+            <span class="key red">✕</span><span class="key">0</span><span class="key green">○</span>
+          </div>
+          <div class="slot" aria-hidden="true"></div>
+        </button>
+        <p class="term-note" id="termNote">Tryck på terminalen. Du vet hur det går.</p>
+      </div>
+    </div>
+
+    <section id="appar" aria-labelledby="appar-rubrik">
+      <h2 id="appar-rubrik">Appar</h2>
+      <p class="section-lede">Varje app tar hand om ett enda vardagsögonblick som annars brukar gå snett.</p>
+
+      <div class="apps">
+        <article class="app">
+          <div class="app-head">
+            <div class="app-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" fill="#14171c"/><circle cx="256" cy="256" r="170" fill="#157a4b"/><path d="M256 150v112l72 48" fill="none" stroke="#f5f6f7" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div>
+              <h3>Nästa tåg</h3>
+              <p class="where">iPhone och webb · SL i Stockholms län</p>
+            </div>
+          </div>
+          <span class="pill soon">Snart på App Store</span>
+          <p class="what"><span class="tagline">Vet när du ska gå.</span>Räknar ut gångtiden till hållplatsen och visar nedräkningen på låsskärmen, så du hinner med utan att stressa.</p>
+          <div class="links">
+            <a class="primary" href="/nasta-tag/">Öppna webbappen</a>
+            <a href="/support/">Support</a>
+            <a href="/nasta-tag/integritet.html">Integritet</a>
+          </div>
+        </article>
+
+        <article class="app">
+          <div class="app-head">
+            <div class="app-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" fill="#115f3b"/><circle cx="256" cy="256" r="170" fill="#f5f6f7"/><text x="256" y="338" font-family="Helvetica,Arial,sans-serif" font-size="230" font-weight="700" text-anchor="middle" fill="#115f3b">P</text></svg></div>
+            <div>
+              <h3>Flytta bilen</h3>
+              <p class="where">Webbapp · Stockholms stad</p>
+            </div>
+          </div>
+          <span class="pill dev">Under utveckling</span>
+          <p class="what"><span class="tagline">Slipp böter på städdagen.</span>Visar när bilen måste flyttas från gatan där du parkerat. Telefonen hämtar själv gatorna runt dig, så din position lämnar aldrig telefonen.</p>
+          <div class="links">
+            <span class="off">Kommer snart</span>
+          </div>
+        </article>
+
+        <article class="app next">
+          <div class="q" aria-hidden="true">?</div>
+          <p class="what"><span class="tagline">Ditt medges ej-ögonblick?</span>Finns det något i vardagen som alltid krånglar och borde ha en enkel app? Berätta, så kanske det blir nästa.</p>
+          <div class="links">
+            <a href="mailto:hej@medgesej.se?subject=Tips%20p%C3%A5%20en%20app">Tipsa oss</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="om" aria-labelledby="om-rubrik">
+      <div class="about">
+        <div>
+          <h2 id="om-rubrik">Om Medges Ej</h2>
+          <p>Alla har stått där. Kortet blippas, terminalen tänker, och sedan står det <strong>Medges ej</strong> medan kön bakom en blir tyst.</p>
+          <p>Det är vardagen i ett nötskal: små saker som säger nej i fel ögonblick. Tåget som går precis när du kommer ut. Lappen på vindrutan för att det var städdag.</p>
+          <p>Medges Ej är en liten appstudio i Stockholm som drivs av Kim Eriksson. Här byggs en app i taget, för ett problem i taget.</p>
+        </div>
+        <ul class="principles" aria-label="Så bygger vi apparna">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div><b>En sak per app</b><span>Varje app gör en sak och gör den lugnt. Inga flöden, inga onödiga funktioner.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+            <div><b>Din data stannar hos dig</b><span>Inget konto behövs, och din plats används bara på telefonen.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M12 4v16" transform="rotate(45 12 12)"/></svg>
+            <div><b>Ingen reklam</b><span>Apparna tjänar sina pengar på att vara bra, inte på att visa annonser.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <div><b>Byggt för Stockholm</b><span>Med öppna data från SL, Trafiklab, SMHI och Stockholms stad.</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer id="kontakt">
+    <div class="contact">
+      <span>Hör av dig:</span>
+      <a href="mailto:hej@medgesej.se">hej@medgesej.se</a>
+      <button class="copy" id="copyMail" type="button" hidden>Kopiera</button>
+      <span id="copyOut" aria-live="polite"></span>
+    </div>
+    <div class="foot-links">
+      <a href="/support/">Support</a>
+      <span>© 2026 Medges Ej</span>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

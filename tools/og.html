@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="sv"><meta charset="utf-8">
+<!-- Delningsbilden (1200×630). Rendera om med tools/render.sh. -->
+<link rel="stylesheet" href="../site/style.css">
+<style>
+  @font-face { font-family: "Familjen Grotesk"; src: url("../site/fonts/familjen-grotesk-latin.woff2"); font-weight: 400 700; }
+  @font-face { font-family: "Figtree"; src: url("../site/fonts/figtree-latin.woff2"); font-weight: 300 900; }
+  :root { color-scheme: light; --bg:#eceeed; --fg:#191d1c; --muted:#646d6a; --accent:#d92f3c; --accent-soft:#fbe3e5; }
+  html, body { margin: 0; padding: 0; width: 1200px; height: 630px; overflow: hidden; background: var(--bg); color: var(--fg); }
+  .og { width: 1200px; height: 630px; padding: 70px 80px; display: grid; grid-template-columns: 1fr 300px; gap: 60px; align-items: center; }
+  .logo { font-size: 30px; gap: 14px; margin-bottom: 44px; }
+  .logo-x { width: 40px; height: 40px; } .logo-x svg { width: 20px; height: 20px; }
+  h1 { font-size: 84px; margin: 0 0 28px; }
+  .lede { font-size: 30px; max-width: none; }
+  .terminal { width: 290px; cursor: default; }
+  .screen { height: 220px; }
+  .x { animation: none; }
+</style>
+<div class="og">
+  <div>
+    <div class="logo"><span class="logo-x"><svg viewBox="0 0 24 24" fill="none" stroke="#d92f3c" stroke-width="3.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Medges Ej</div>
+    <h1>Vardagen säger <em>nej.</em> Våra appar säger ja.</h1>
+    <p class="lede">Lugna appar för vardagens små strul i Stockholm.</p>
+  </div>
+  <div class="terminal">
+    <div class="screen"><div class="state">
+      <div class="x"><svg viewBox="0 0 24 24" fill="none" stroke="#e0313f" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
+      <span class="denied-title">Medges ej</span>
+      <span class="denied-sub">Kontakta din kortutgivare</span>
+    </div></div>
+    <div class="keys"><span class="key">1</span><span class="key">2</span><span class="key">3</span><span class="key">4</span><span class="key">5</span><span class="key">6</span><span class="key red">✕</span><span class="key">0</span><span class="key green">○</span></div>
+    <div class="slot"></div>
+  </div>
+</div>
+</html>
