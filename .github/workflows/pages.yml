@@ -1,0 +1,40 @@
+name: Publicera medgesej.se
+
+on:
+  push:
+    branches: [main]
+  # nasta-tag skickar den här när appen har ändrats, så att /nasta-tag/ byggs om.
+  repository_dispatch:
+    types: [nasta-tag-updated]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: kimeriksson75/nasta-tag
+          ref: main
+          path: _nasta-tag
+      - name: Bygg sajten
+        run: scripts/build.sh
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
