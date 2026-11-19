@@ -109,6 +109,7 @@ h2 { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.6rem
 .contact-text a { font-weight: 600; }
 
 footer { border-top: 1px solid var(--line); padding-top: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; font-size: .9rem; color: var(--muted); }
+.legal { display: grid; gap: 2px; }
 .foot-links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 .foot-links a { text-decoration: none; }
 .foot-links a:hover { color: var(--fg); text-decoration: underline; }
