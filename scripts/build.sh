@@ -14,7 +14,7 @@ cp -R site/. _site/
 ( cd "$NASTA_TAG" && cp -R index.html sw.js style.css manifest.webmanifest icon.svg icon-180.png icon-512.png integritet.html "Nästa tåg.shortcut" src data vendor "$OLDPWD/_site/nasta-tag/" )
 
 # Adresserna som App Store Connect pekar på får aldrig försvinna.
-for f in index.html support/index.html nasta-tag/index.html nasta-tag/integritet.html og.png; do
+for f in index.html support/index.html nasta-tag/index.html nasta-tag/integritet.html flytta-bilen/integritet/index.html og.png; do
   test -s "_site/$f" || { echo "Saknas: $f" >&2; exit 1; }
 done
 echo "Byggt: $(find _site -type f | wc -l | tr -d ' ') filer i _site/"
