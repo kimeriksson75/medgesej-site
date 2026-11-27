@@ -8,8 +8,9 @@ Webbplatsen för appstudion Medges Ej. Repot äger domänen medgesej.se och bygg
 | `/support/` | `site/support/index.html` |
 | `/nasta-tag/` | webbappen i [kimeriksson75/nasta-tag](https://github.com/kimeriksson75/nasta-tag), hämtas vid bygget |
 | `/nasta-tag/integritet.html` | `integritet.html` i nasta-tag |
+| `/flytta-bilen/integritet/` | `site/flytta-bilen/integritet/index.html` |
 
-`/support/` och `/nasta-tag/integritet.html` är angivna i App Store Connect och får inte flyttas.
+`/support/`, `/nasta-tag/integritet.html` och `/flytta-bilen/integritet/` är angivna i App Store Connect och får inte flyttas.
 
 ## Bygga lokalt
 
